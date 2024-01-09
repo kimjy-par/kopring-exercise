@@ -4,6 +4,13 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
+  graphql:
+    path: /graphql
+    graphiql:
+      enabled: true
+      printer:
+        enabled: true
+  
   jpa:
     hibernate:
       ddl-auto: update

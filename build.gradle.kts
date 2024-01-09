@@ -4,6 +4,7 @@ plugins {
 	id("org.springframework.boot") version "3.2.1"
 	id("io.spring.dependency-management") version "1.1.4"
 	id("org.jetbrains.kotlin.plugin.jpa") version "1.9.21"
+	id("com.graphql_java_generator.graphql-gradle-plugin") version "1.18.11"
 	kotlin("jvm") version "1.9.21"
 	kotlin("plugin.spring") version "1.9.21"
 }
@@ -27,10 +28,12 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-graphql")
+	 implementation("com.graphql-java-generator:graphql-java-common-runtime:1.18.11")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.postgresql:postgresql")
+	implementation("com.graphql-java:graphql-java-extended-scalars:21.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

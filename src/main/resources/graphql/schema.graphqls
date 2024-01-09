@@ -1,0 +1,19 @@
+scalar Long
+
+type Query{
+    tasks: [Task]
+}
+
+type Mutation{
+    createTask(description: String): Task
+    deleteTask(id: Long): Message
+}
+
+type Task{
+    id: ID
+    description: String
+}
+
+type Message{
+    message: String
+}
